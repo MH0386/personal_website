@@ -23,10 +23,11 @@ class MyApp extends StatelessWidget {
               Text(
                 'Mohamed Hisham Abdelzaher',
                 style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    fontSize: 70,
-                    fontFamily: GoogleFonts.lobster().fontFamily),
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontSize: 70,
+                  fontFamily: GoogleFonts.lobster().fontFamily,
+                ),
               ),
               Text(
                 'Undergraduate Student',
@@ -133,21 +134,6 @@ class MyApp extends StatelessWidget {
                             ),
                             child: const Image(
                               image: AssetImage('images/LinkedIn.png'),
-                              height: 50,
-                            ),
-                          )),
-                  Link(
-                      target: LinkTarget.blank,
-                      uri: Uri.parse('https://www.Twitter.com/mh0386/'),
-                      builder: (context, followLink) => OutlinedButton(
-                            onPressed: followLink,
-                            style: ButtonStyle(
-                              shape: MaterialStateProperty.all(
-                                const CircleBorder(),
-                              ),
-                            ),
-                            child: const Image(
-                              image: AssetImage('images/Twitter.png'),
                               height: 50,
                             ),
                           )),
